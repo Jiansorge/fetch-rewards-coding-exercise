@@ -16,8 +16,10 @@ The final result should be displayed to the user in an easy-to-read list.
 
 ## Instructions
 
-1. Clone repository: `git clone https://github.com/Jiansorge/fetch-rewards-coding-exercise.git`
-1. Change to new repo directory `cd fetch-rewards-coding-exercise`
+1. Clone repository:
+** `git clone https://github.com/Jiansorge/fetch-rewards-coding-exercise.git`
+1. Change to new repo directory:
+** `cd fetch-rewards-coding-exercise`
 1. Run `npm install` in terminal
 1. Run `npm start` to launch UI
 

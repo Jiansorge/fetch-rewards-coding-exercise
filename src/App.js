@@ -17,7 +17,9 @@ function App() {
       <header className="App-header">
         <h1>Fetch Rewards Coding Exercise</h1>
       </header>
-      <Users users={users}/>
+      <body>
+        <Users users={users}/>
+      </body>  
     </div>
   );
 }

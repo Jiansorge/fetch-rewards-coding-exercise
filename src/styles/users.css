@@ -6,48 +6,46 @@ section.users-container {
   overflow: auto;
 }
 
-header img{
-  min-width: 100px;
-}
-
-
-
 h2 {
   text-align: center;
 }
 
 ol.users-group{
   width:auto;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 @media only screen and (max-width:600px) {
-  header{
-    padding-bottom: 2rem;
-  }
-
   section.users-container {
     flex-wrap: nowrap;
     height:auto;
+    padding:0;
   } 
+
   ol.users-group {
     width:100%;
   }
   ol.users{
     height: auto;
   }
+  .users-group h3{
+    cursor: pointer;
+  }
+  .users-group h3:hover,
+  .users-group h3:active {
+    background-color: rgb(56,27,79,0.2);
+    border: 0.5px rgb(56,27,79,0.9) solid
+  }
 }
 
-@media only screen and (min-width:600px) and (max-width:900px) {
- ol.users-group{
-   /* width:50%; */
- }
+@media only screen and (min-width:600px) {
+  .users-group h3{
+    cursor:default;
+  }
 }
-
 
 .users-group h3{
-  padding-bottom: 1.5rem;
-  cursor: pointer;
+  padding: 0.75rem;
   background-color: rgb(56,27,79,0.1);
   border-radius: 3px;
   text-align: center;
@@ -57,13 +55,11 @@ ol.users {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  background-color: aqua;
   height:50vh
 }
 
 li.user {
   display: flex;
-  /* list-style-position: inside; */
+  justify-content: center;
   padding-left: 1rem;
-
 }

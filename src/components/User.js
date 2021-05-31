@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/users.css'
 
-
 const User = ({ user })=> {
   return(
     <li className="user">

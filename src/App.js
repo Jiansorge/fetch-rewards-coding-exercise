@@ -24,8 +24,9 @@ function App() {
         <UsersContainer users={users}/>
       </main>  
       <footer className="footer">
-        <h5>Created by <a href="https://jiansorge.com">Jian Sorge</a> for Fetch Rewards, May 2021</h5>
-        <h5><a href="https://github.com/Jiansorge/fetch-rewards-coding-exercise/">Code Repository</a></h5>
+        <h4>Created by <a href="https://jiansorge.com">Jian Sorge</a> for Fetch Rewards</h4>
+        <h4>May 2021</h4>
+        <h4><a href="https://github.com/Jiansorge/fetch-rewards-coding-exercise/">Code Repository</a></h4>
       </footer>
     </div>
   );

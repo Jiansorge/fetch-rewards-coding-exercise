@@ -1,11 +1,11 @@
 import React  from 'react'
 import Users from './Users'
+import '../styles/users.css'
 
 const UsersContainer = ({ users }) =>{
   const groupedUsersByListId = arrayGroupByProperty(users, 'listId')
   return(
     <section className='users-container'>
-      <h2>Users</h2>
       {
         Object.entries(groupedUsersByListId)
         .sort(function(a,b){
@@ -13,9 +13,9 @@ const UsersContainer = ({ users }) =>{
         })
         .map(groupTuple=> {
           return (
-            <ul className="users-group" key={`userGroup-${groupTuple[0]}`}>
+            <ol className="users-group" key={`userGroup-${groupTuple[0]}`}>
               <Users users={groupTuple[1]}/>
-            </ul>
+            </ol>
         )})
 
       }

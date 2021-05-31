@@ -20,11 +20,12 @@ function App() {
         <h1>Fetch Rewards Coding Exercise</h1>
       </header>
       <main>
+        <h2>Users</h2>
         <UsersContainer users={users}/>
       </main>  
       <footer className="footer">
         <h5>Created by <a href="https://jiansorge.com">Jian Sorge</a> for Fetch Rewards, May 2021</h5>
-        <a href="https://github.com/Jiansorge/fetch-rewards-coding-exercise/">Code Repository</a>
+        <h5><a href="https://github.com/Jiansorge/fetch-rewards-coding-exercise/">Code Repository</a></h5>
       </footer>
     </div>
   );

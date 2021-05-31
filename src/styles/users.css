@@ -1,0 +1,69 @@
+section.users-container {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2rem;
+  height: 65vh;
+  overflow: auto;
+}
+
+header img{
+  min-width: 100px;
+}
+
+
+
+h2 {
+  text-align: center;
+}
+
+ol.users-group{
+  width:auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width:600px) {
+  header{
+    padding-bottom: 2rem;
+  }
+
+  section.users-container {
+    flex-wrap: nowrap;
+    height:auto;
+  } 
+  ol.users-group {
+    width:100%;
+  }
+  ol.users{
+    height: auto;
+  }
+}
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+ ol.users-group{
+   /* width:50%; */
+ }
+}
+
+
+.users-group h3{
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+  background-color: rgb(56,27,79,0.1);
+  border-radius: 3px;
+  text-align: center;
+}
+
+ol.users {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: aqua;
+  height:50vh
+}
+
+li.user {
+  display: flex;
+  /* list-style-position: inside; */
+  padding-left: 1rem;
+
+}

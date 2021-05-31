@@ -1,34 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import User from './User'
 
-const Users = (props) =>{
-  let currentListId = 0
+const Users = ({ users }) =>{
+  const [isShown, setIsShown] = useState(true);
+  console.log("users",users)
   return(
-    <ol>
-      <h2>Users</h2>
+    <ul onClick={()=>setIsShown(!isShown)}
+    >
+      <h3>User List {users[0].listId}</h3>
       {
-        props.users.sort(function(a,b){
-          let m1=a.listId,
-              m2=b.listId,
-              n1=a.id,
-              n2=b.id;
-          return m1<m2 ? -1 : m1>m2 ? 1 :
-                 n1<n2 ? -1 : n1>n2 ? 1 : 0;
-        })
+        isShown &&
+        users.sort(function(a,b){return a.id-b.id})
         .map(user=>{
           return (
             <>
             {
-             
               !!user.name  &&
-              <User user={user}/>
+              <User key={`list-${user.listId}-userId-${user.id}`} user={user}/>
             }
             </>
-            )
+          )
         })
       }
-    </ol>
+    </ul>
   )
 }
+
 
 export default Users

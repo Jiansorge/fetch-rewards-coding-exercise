@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './App.css';
-import Users from './components/Users'
+import UsersContainer from './components/UsersContainer'
 
 function App() {
   const [users, setUsers] = useState([])
@@ -17,9 +17,9 @@ function App() {
       <header className="App-header">
         <h1>Fetch Rewards Coding Exercise</h1>
       </header>
-      <body>
-        <Users users={users}/>
-      </body>  
+      <main>
+        <UsersContainer users={users}/>
+      </main>  
     </div>
   );
 }

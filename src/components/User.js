@@ -1,13 +1,13 @@
 import React from 'react'
 
-const User = (props)=> {
-  const user = props.user
+const User = ({ user })=> {
+  console.log('user',user)
   return(
-    <li key={user.id}>
+    <li>
       <ul>
-        <p>List Id:{user.listId}</p>
-        <p>Name: {user.name}</p>
-        <p>Id: {user.id}</p>
+        <p>List Id: {user?.listId}</p>
+        <p>Name: {user?.name}</p>
+        <p>Id: {user?.id}</p>
       </ul>
       <br></br>
     </li>

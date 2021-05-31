@@ -4,8 +4,8 @@ import Users from './Users'
 const UsersContainer = ({ users }) =>{
   const groupedUsersByListId = arrayGroupByProperty(users, 'listId')
   return(
-    <>
-      <h2 >Users</h2>
+    <section className='users-container'>
+      <h2>Users</h2>
       {
         Object.entries(groupedUsersByListId)
         .sort(function(a,b){
@@ -13,13 +13,13 @@ const UsersContainer = ({ users }) =>{
         })
         .map(groupTuple=> {
           return (
-            <ul key={`userGroup-${groupTuple[0]}`}>
+            <ul className="users-group" key={`userGroup-${groupTuple[0]}`}>
               <Users users={groupTuple[1]}/>
             </ul>
         )})
 
       }
-    </>
+    </section>
   )
 }
 

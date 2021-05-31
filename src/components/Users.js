@@ -2,12 +2,10 @@ import React, {useState} from 'react'
 import User from './User'
 
 const Users = ({ users }) =>{
-  const [isShown, setIsShown] = useState(true);
-  console.log("users",users)
+  const [isShown, setIsShown] = useState(false);
   return(
-    <ul onClick={()=>setIsShown(!isShown)}
-    >
-      <h3>User List {users[0].listId}</h3>
+    <>
+      <h3 onClick={()=>setIsShown(!isShown)}>User List {users[0].listId}</h3>
       {
         isShown &&
         users.sort(function(a,b){return a.id-b.id})
@@ -22,7 +20,7 @@ const Users = ({ users }) =>{
           )
         })
       }
-    </ul>
+    </>
   )
 }
 

@@ -2,7 +2,7 @@
 
 ## Exercise
 
-[Link](https://fetch-hiring.s3.amazonaws.com/frontend.html)
+[Original Link](https://fetch-hiring.s3.amazonaws.com/frontend.html)
 
 A web app that retrieves the data from https://fetch-hiring.s3.amazonaws.com/hiring.json.
 
@@ -22,7 +22,7 @@ The final result should be displayed to the user in an easy-to-read list.
     * `cd fetch-rewards-coding-exercise`
 3. Download node packages:
     * `npm install`
-4. Launch React web app:
+4. After downloading packages, launch React web app:
     * `npm start`
 
 ## About

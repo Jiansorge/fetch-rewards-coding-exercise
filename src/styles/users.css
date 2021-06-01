@@ -55,7 +55,7 @@ ol.users {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  height:50vh
+  height:50vh;
 }
 
 li.user {
